@@ -17,10 +17,10 @@ jobs:
       - uses: pnpm/action-setup@v4.1.0
         with:
           run_install: true
-      - name: Use Node.js 22
+      - name: Use Node.js 24
         uses: actions/setup-node@v4.4.0
         with:
-          node-version: 22
+          node-version: 24
           cache: 'pnpm'
       - name: Build the extension
         run: pnpm build
